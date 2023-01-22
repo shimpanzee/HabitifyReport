@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		473005D829739C1A00602136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005D729739C1A00602136 /* AppDelegate.swift */; };
+		473005DC29739C1A00602136 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005DB29739C1A00602136 /* RootViewController.swift */; };
+		473005E129739C1E00602136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473005E029739C1E00602136 /* Assets.xcassets */; };
+		473005E429739C1E00602136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473005E229739C1E00602136 /* LaunchScreen.storyboard */; };
+		473005EF29739C1F00602136 /* HabitifyReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005EE29739C1F00602136 /* HabitifyReportTests.swift */; };
+		473006092973CEE400602136 /* HabitsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473006082973CEE400602136 /* HabitsJson.swift */; };
+		47801402297838740089D82E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801401297838740089D82E /* SceneDelegate.swift */; };
+		4780140429783AF50089D82E /* HabitifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780140329783AF50089D82E /* HabitifyAPI.swift */; };
+		4780140629783CEC0089D82E /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780140529783CEC0089D82E /* RootViewModel.swift */; };
+		4780140F29786E110089D82E /* SingleValueEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780140E29786E110089D82E /* SingleValueEditor.swift */; };
+		47801412297882CE0089D82E /* UIView+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801411297882CE0089D82E /* UIView+Separator.swift */; };
+		478014142978C9850089D82E /* ReportToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014132978C9850089D82E /* ReportToolbar.swift */; };
+		47801416297920380089D82E /* DismissablePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801415297920380089D82E /* DismissablePickerView.swift */; };
+		47801419297920830089D82E /* DateAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801418297920830089D82E /* DateAxisValueFormatter.swift */; };
+		47801423297921F90089D82E /* PublishedOnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801421297921F90089D82E /* PublishedOnMain.swift */; };
+		47801424297921F90089D82E /* Publisher+WeakAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801422297921F90089D82E /* Publisher+WeakAssign.swift */; };
+		478014282979356A0089D82E /* ReportToolbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014272979356A0089D82E /* ReportToolbarViewModel.swift */; };
+		4780142B297936D00089D82E /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780142A297936D00089D82E /* String+LocalizedError.swift */; };
+		4780142D29793A1E0089D82E /* Date+DayUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780142C29793A1E0089D82E /* Date+DayUtil.swift */; };
+		478014302979D6CD0089D82E /* HabitUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780142F2979D6CD0089D82E /* HabitUnit.swift */; };
+		478014322979E9800089D82E /* ChartDataEntry+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014312979E9800089D82E /* ChartDataEntry+Date.swift */; };
+		478014342979EAF00089D82E /* ChartDataEntry+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014332979EAF00089D82E /* ChartDataEntry+Utils.swift */; };
+		478014362979F00C0089D82E /* Collection+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014352979F00C0089D82E /* Collection+Subscript.swift */; };
+		482788D7BD4384D6CF09EF5C /* Pods_HabitifyReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC7E417FE7F6D5264188993 /* Pods_HabitifyReport.framework */; };
+		D2338BB656A5F96A14086BB4 /* Pods_HabitifyReportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F381CA5916E9B8FCD0D79395 /* Pods_HabitifyReportTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		473005EB29739C1F00602136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473005CC29739C1A00602136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 473005D329739C1A00602136;
+			remoteInfo = HabitifyReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BC7E417FE7F6D5264188993 /* Pods_HabitifyReport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitifyReport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		473005D429739C1A00602136 /* HabitifyReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitifyReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		473005D729739C1A00602136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		473005DB29739C1A00602136 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		473005E029739C1E00602136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		473005E329739C1E00602136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		473005E529739C1E00602136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473005EA29739C1F00602136 /* HabitifyReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitifyReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		473005EE29739C1F00602136 /* HabitifyReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitifyReportTests.swift; sourceTree = "<group>"; };
+		473005F829739C1F00602136 /* HabitifyReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitifyReportUITests.swift; sourceTree = "<group>"; };
+		473005FA29739C1F00602136 /* HabitifyReportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitifyReportUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4730060729739C7D00602136 /* Network.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Network.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		473006082973CEE400602136 /* HabitsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsJson.swift; sourceTree = "<group>"; };
+		47801401297838740089D82E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4780140329783AF50089D82E /* HabitifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitifyAPI.swift; sourceTree = "<group>"; };
+		4780140529783CEC0089D82E /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		4780140E29786E110089D82E /* SingleValueEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleValueEditor.swift; sourceTree = "<group>"; };
+		47801411297882CE0089D82E /* UIView+Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Separator.swift"; sourceTree = "<group>"; };
+		478014132978C9850089D82E /* ReportToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportToolbar.swift; sourceTree = "<group>"; };
+		47801415297920380089D82E /* DismissablePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissablePickerView.swift; sourceTree = "<group>"; };
+		47801418297920830089D82E /* DateAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAxisValueFormatter.swift; sourceTree = "<group>"; };
+		47801421297921F90089D82E /* PublishedOnMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishedOnMain.swift; sourceTree = "<group>"; };
+		47801422297921F90089D82E /* Publisher+WeakAssign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+WeakAssign.swift"; sourceTree = "<group>"; };
+		478014272979356A0089D82E /* ReportToolbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportToolbarViewModel.swift; sourceTree = "<group>"; };
+		4780142A297936D00089D82E /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
+		4780142C29793A1E0089D82E /* Date+DayUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DayUtil.swift"; sourceTree = "<group>"; };
+		4780142F2979D6CD0089D82E /* HabitUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitUnit.swift; sourceTree = "<group>"; };
+		478014312979E9800089D82E /* ChartDataEntry+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartDataEntry+Date.swift"; sourceTree = "<group>"; };
+		478014332979EAF00089D82E /* ChartDataEntry+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartDataEntry+Utils.swift"; sourceTree = "<group>"; };
+		478014352979F00C0089D82E /* Collection+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Subscript.swift"; sourceTree = "<group>"; };
+		9F0BB815866595C808C9C161 /* Pods-HabitifyReportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitifyReportTests.debug.xcconfig"; path = "Target Support Files/Pods-HabitifyReportTests/Pods-HabitifyReportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5BCE28CADCDC4D035A77D0 /* Pods-HabitifyReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitifyReport.release.xcconfig"; path = "Target Support Files/Pods-HabitifyReport/Pods-HabitifyReport.release.xcconfig"; sourceTree = "<group>"; };
+		DEA7A620DBA25BAD87540AF2 /* Pods-HabitifyReportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitifyReportTests.release.xcconfig"; path = "Target Support Files/Pods-HabitifyReportTests/Pods-HabitifyReportTests.release.xcconfig"; sourceTree = "<group>"; };
+		F381CA5916E9B8FCD0D79395 /* Pods_HabitifyReportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitifyReportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ED8FB3EAE30D11D8D8C425 /* Pods-HabitifyReport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitifyReport.debug.xcconfig"; path = "Target Support Files/Pods-HabitifyReport/Pods-HabitifyReport.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		473005D129739C1A00602136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482788D7BD4384D6CF09EF5C /* Pods_HabitifyReport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473005E729739C1F00602136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2338BB656A5F96A14086BB4 /* Pods_HabitifyReportTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473005CB29739C1A00602136 = {
+			isa = PBXGroup;
+			children = (
+				473005D629739C1A00602136 /* HabitifyReport */,
+				473005ED29739C1F00602136 /* HabitifyReportTests */,
+				473005F729739C1F00602136 /* HabitifyReportUITests */,
+				473005D529739C1A00602136 /* Products */,
+				6111AEE7FF2B48CBB049467B /* Pods */,
+				549E3C7BF979A4F127765CF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		473005D529739C1A00602136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				473005D429739C1A00602136 /* HabitifyReport.app */,
+				473005EA29739C1F00602136 /* HabitifyReportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		473005D629739C1A00602136 /* HabitifyReport */ = {
+			isa = PBXGroup;
+			children = (
+				478014262979233A0089D82E /* Report */,
+				47801407297853790089D82E /* Shared */,
+				47801401297838740089D82E /* SceneDelegate.swift */,
+				473005D729739C1A00602136 /* AppDelegate.swift */,
+				473005E029739C1E00602136 /* Assets.xcassets */,
+				473005E229739C1E00602136 /* LaunchScreen.storyboard */,
+				473005E529739C1E00602136 /* Info.plist */,
+				4730060729739C7D00602136 /* Network.playground */,
+			);
+			path = HabitifyReport;
+			sourceTree = "<group>";
+		};
+		473005ED29739C1F00602136 /* HabitifyReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				473005EE29739C1F00602136 /* HabitifyReportTests.swift */,
+			);
+			path = HabitifyReportTests;
+			sourceTree = "<group>";
+		};
+		473005F729739C1F00602136 /* HabitifyReportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				473005F829739C1F00602136 /* HabitifyReportUITests.swift */,
+				473005FA29739C1F00602136 /* HabitifyReportUITestsLaunchTests.swift */,
+			);
+			path = HabitifyReportUITests;
+			sourceTree = "<group>";
+		};
+		47801407297853790089D82E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				478014252979221A0089D82E /* Combine */,
+				478014172979206E0089D82E /* Charts */,
+				47801429297936A60089D82E /* Foundation */,
+				47801410297882BA0089D82E /* UIKit */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		47801410297882BA0089D82E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				47801411297882CE0089D82E /* UIView+Separator.swift */,
+				4780140E29786E110089D82E /* SingleValueEditor.swift */,
+				47801415297920380089D82E /* DismissablePickerView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		478014172979206E0089D82E /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				47801418297920830089D82E /* DateAxisValueFormatter.swift */,
+				478014312979E9800089D82E /* ChartDataEntry+Date.swift */,
+				478014332979EAF00089D82E /* ChartDataEntry+Utils.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		478014252979221A0089D82E /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				47801421297921F90089D82E /* PublishedOnMain.swift */,
+				47801422297921F90089D82E /* Publisher+WeakAssign.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		478014262979233A0089D82E /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				4780142E2979D6BD0089D82E /* Model */,
+				4780140329783AF50089D82E /* HabitifyAPI.swift */,
+				478014132978C9850089D82E /* ReportToolbar.swift */,
+				478014272979356A0089D82E /* ReportToolbarViewModel.swift */,
+				473005DB29739C1A00602136 /* RootViewController.swift */,
+				4780140529783CEC0089D82E /* RootViewModel.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		47801429297936A60089D82E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4780142A297936D00089D82E /* String+LocalizedError.swift */,
+				4780142C29793A1E0089D82E /* Date+DayUtil.swift */,
+				478014352979F00C0089D82E /* Collection+Subscript.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4780142E2979D6BD0089D82E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473006082973CEE400602136 /* HabitsJson.swift */,
+				4780142F2979D6CD0089D82E /* HabitUnit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		549E3C7BF979A4F127765CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC7E417FE7F6D5264188993 /* Pods_HabitifyReport.framework */,
+				F381CA5916E9B8FCD0D79395 /* Pods_HabitifyReportTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6111AEE7FF2B48CBB049467B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED8FB3EAE30D11D8D8C425 /* Pods-HabitifyReport.debug.xcconfig */,
+				CC5BCE28CADCDC4D035A77D0 /* Pods-HabitifyReport.release.xcconfig */,
+				9F0BB815866595C808C9C161 /* Pods-HabitifyReportTests.debug.xcconfig */,
+				DEA7A620DBA25BAD87540AF2 /* Pods-HabitifyReportTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		473005D329739C1A00602136 /* HabitifyReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473005FE29739C1F00602136 /* Build configuration list for PBXNativeTarget "HabitifyReport" */;
+			buildPhases = (
+				272CE5A231ECE97D274C5F93 /* [CP] Check Pods Manifest.lock */,
+				473005D029739C1A00602136 /* Sources */,
+				473005D129739C1A00602136 /* Frameworks */,
+				473005D229739C1A00602136 /* Resources */,
+				799F11C34A1EADF32E765E07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitifyReport;
+			productName = HabitifyReport;
+			productReference = 473005D429739C1A00602136 /* HabitifyReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		473005E929739C1F00602136 /* HabitifyReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4730060129739C1F00602136 /* Build configuration list for PBXNativeTarget "HabitifyReportTests" */;
+			buildPhases = (
+				3F73EF5C079314A62BBCE33B /* [CP] Check Pods Manifest.lock */,
+				473005E629739C1F00602136 /* Sources */,
+				473005E729739C1F00602136 /* Frameworks */,
+				473005E829739C1F00602136 /* Resources */,
+				8A1205D703BC4DCF9556765A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				473005EC29739C1F00602136 /* PBXTargetDependency */,
+			);
+			name = HabitifyReportTests;
+			productName = HabitifyReportTests;
+			productReference = 473005EA29739C1F00602136 /* HabitifyReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		473005CC29739C1A00602136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "John Shimmin";
+				TargetAttributes = {
+					473005D329739C1A00602136 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					473005E929739C1F00602136 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 473005D329739C1A00602136;
+					};
+				};
+			};
+			buildConfigurationList = 473005CF29739C1A00602136 /* Build configuration list for PBXProject "HabitifyReport" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 473005CB29739C1A00602136;
+			productRefGroup = 473005D529739C1A00602136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				473005D329739C1A00602136 /* HabitifyReport */,
+				473005E929739C1F00602136 /* HabitifyReportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		473005D229739C1A00602136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473005E429739C1E00602136 /* LaunchScreen.storyboard in Resources */,
+				473005E129739C1E00602136 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473005E829739C1F00602136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		272CE5A231ECE97D274C5F93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitifyReport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F73EF5C079314A62BBCE33B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitifyReportTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		799F11C34A1EADF32E765E07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitifyReport/Pods-HabitifyReport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitifyReport/Pods-HabitifyReport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitifyReport/Pods-HabitifyReport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A1205D703BC4DCF9556765A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitifyReportTests/Pods-HabitifyReportTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitifyReportTests/Pods-HabitifyReportTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitifyReportTests/Pods-HabitifyReportTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		473005D029739C1A00602136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473006092973CEE400602136 /* HabitsJson.swift in Sources */,
+				478014302979D6CD0089D82E /* HabitUnit.swift in Sources */,
+				473005DC29739C1A00602136 /* RootViewController.swift in Sources */,
+				4780142D29793A1E0089D82E /* Date+DayUtil.swift in Sources */,
+				4780140F29786E110089D82E /* SingleValueEditor.swift in Sources */,
+				478014142978C9850089D82E /* ReportToolbar.swift in Sources */,
+				473005D829739C1A00602136 /* AppDelegate.swift in Sources */,
+				47801402297838740089D82E /* SceneDelegate.swift in Sources */,
+				47801424297921F90089D82E /* Publisher+WeakAssign.swift in Sources */,
+				47801423297921F90089D82E /* PublishedOnMain.swift in Sources */,
+				47801416297920380089D82E /* DismissablePickerView.swift in Sources */,
+				478014342979EAF00089D82E /* ChartDataEntry+Utils.swift in Sources */,
+				47801412297882CE0089D82E /* UIView+Separator.swift in Sources */,
+				4780140629783CEC0089D82E /* RootViewModel.swift in Sources */,
+				47801419297920830089D82E /* DateAxisValueFormatter.swift in Sources */,
+				478014282979356A0089D82E /* ReportToolbarViewModel.swift in Sources */,
+				478014322979E9800089D82E /* ChartDataEntry+Date.swift in Sources */,
+				4780142B297936D00089D82E /* String+LocalizedError.swift in Sources */,
+				4780140429783AF50089D82E /* HabitifyAPI.swift in Sources */,
+				478014362979F00C0089D82E /* Collection+Subscript.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473005E629739C1F00602136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473005EF29739C1F00602136 /* HabitifyReportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		473005EC29739C1F00602136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 473005D329739C1A00602136 /* HabitifyReport */;
+			targetProxy = 473005EB29739C1F00602136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		473005E229739C1E00602136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				473005E329739C1E00602136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		473005FC29739C1F00602136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		473005FD29739C1F00602136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		473005FF29739C1F00602136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5ED8FB3EAE30D11D8D8C425 /* Pods-HabitifyReport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitifyReport/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shimmin.HabitifyReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4730060029739C1F00602136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC5BCE28CADCDC4D035A77D0 /* Pods-HabitifyReport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitifyReport/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shimmin.HabitifyReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4730060229739C1F00602136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0BB815866595C808C9C161 /* Pods-HabitifyReportTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shimmin.HabitifyReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitifyReport.app/HabitifyReport";
+			};
+			name = Debug;
+		};
+		4730060329739C1F00602136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA7A620DBA25BAD87540AF2 /* Pods-HabitifyReportTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shimmin.HabitifyReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitifyReport.app/HabitifyReport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		473005CF29739C1A00602136 /* Build configuration list for PBXProject "HabitifyReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473005FC29739C1F00602136 /* Debug */,
+				473005FD29739C1F00602136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		473005FE29739C1F00602136 /* Build configuration list for PBXNativeTarget "HabitifyReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473005FF29739C1F00602136 /* Debug */,
+				4730060029739C1F00602136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4730060129739C1F00602136 /* Build configuration list for PBXNativeTarget "HabitifyReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4730060229739C1F00602136 /* Debug */,
+				4730060329739C1F00602136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 473005CC29739C1A00602136 /* Project object */;
+}

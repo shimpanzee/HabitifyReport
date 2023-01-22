@@ -1,0 +1,50 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - CombineCocoa (0.4.1)
+  - Factory (1.2.9)
+  - MockingbirdFramework (0.20.0)
+  - Peek (5.3.0)
+  - SwiftAlgorithms (1.0.0)
+  - SwiftDate (7.0.0)
+  - SwiftLint (0.50.3)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Charts
+  - CombineCocoa
+  - Factory
+  - MockingbirdFramework
+  - Peek
+  - SwiftDate
+  - SwiftLint
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - CombineCocoa
+    - Factory
+    - MockingbirdFramework
+    - Peek
+    - SwiftAlgorithms
+    - SwiftDate
+    - SwiftLint
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
+  Factory: 883df5a392a7f4110597c42652b8db9c07618a09
+  MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
+  Peek: 4209f7aa72d00244616f6b4804739c04cae2e457
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: e4540831834b7da730e1d04c90b49bf472ee8383
+
+COCOAPODS: 1.11.3
